@@ -1,8 +1,10 @@
 services:
     date:
+        image: cvirkovadim/date-result
         build:
             dockerfile: date.dockerfile
     result:
+        image: cvirkovadim/test-result
         build: .
         ports:
             - '3000:3000'
