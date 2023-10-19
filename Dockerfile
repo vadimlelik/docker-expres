@@ -2,6 +2,6 @@ FROM node:18
 
 COPY . .
 
-RUN npm ci
+RUN npm i
 
 CMD [ "node", "index.js" ]
